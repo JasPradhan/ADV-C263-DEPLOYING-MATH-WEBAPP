@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+
+    body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+        background-color: #282828;
+        color: white;
+    }
+
+    h1 {
+        color: gold;
+    }
+
+    h5 {
+        color: cyan;
+    }
+
+    input[type="submit"] {
+        background-color: white;
+        color: gold;
+        margin: 4px 2px;
+    }
+
+</style>
+</head>
+
+<!--##NO predefine-->
+<body>
+    <h1>Advance Calculator!</h1>  <br>
+    <img width="15%" height="30%" src="static/img.png">
+    <br>
+    <br>
+    <form method="POST">
+        <label >Enter expression</label><br><br>
+        <select class="is-focused is-large" name="operation" aria-label="operationDropdown">
+            <option>Choose operation</option>
+            <option value="simplify">Simplify</option>
+            <option value="factor">Factor</option>
+        </select>
+    <input placeholder="Expression" name="text">
+    <input type="submit">
+</form>
+
+
+    <p>Your equation is {{equation}} = {{result}}</p>
+    <footer>
+        <h5>
+            Created By- Jas
+        </h5>
+    </footer>
+</body>
+</html>
